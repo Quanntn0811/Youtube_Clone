@@ -13,13 +13,16 @@
         <link rel="stylesheet" href="styles-youtube/header.css">
         <link rel="stylesheet" href="styles-youtube/video.css">
         <link rel="stylesheet" href="styles-youtube/sidebar.css">
+        <link rel="stylesheet" href="styles-youtube/suggestnav.css">
 
     </head>
     <body>
+        <!-- Header -->
         <header class="header">
             <div class="left-section">
                 <img class="hamburger-menu" src="./icon/hamburger-menu.svg">
                 <img class="youtube-logo" src="./icon/youtube-logo.svg">
+                <p class="coder">Powered by quansucno</p>
             </div>
 
             <div class="middle-section">
@@ -36,7 +39,7 @@
                 
             <div class="right-section">
                 <div class="upload-icon-container">
-                    <img class="upload-icon" src="icon/upload.svg">
+                    <img class="upload-icon" src="./icon/upload.svg">
                     <div class="tooltip">Create</div>
                 </div>
                
@@ -53,7 +56,8 @@
                 <img class="user-picture" src="./thumbnails/youtube-profile-picture.jpg">
             </div>
         </header>
-
+        <!-- End header-->
+        <!-- Nav -->
         <nav class="sidebar">
             <div class="sidebar-link">
                 <img src="./icon/home.svg">
@@ -80,17 +84,38 @@
                 <div>Library</div>
             </div>
         </nav>
+        <!-- End nav-->
 
+        <!-- Suggest nav section -->
+        <div class="suggest-nav">
+            <div class="suggest-text"><div class="text-container">All</div></div>
+            <div class="suggest-text"><div class="text-container">Mixes</div></div>
+            <div class="suggest-text"><div class="text-container">Music</div></div>
+            <div class="suggest-text"><div class="text-container">Gaming</div></div>
+            <div class="suggest-text"><div class="text-container">Lo-fi</div></div>
+            <div class="suggest-text"><div class="text-container">Playlists</div></div>
+            <div class="suggest-text"><div class="text-container">Live</div></div>
+            <div class="suggest-text"><div class="text-container">Soul Music</div></div>
+            <div class="suggest-text"><div class="text-container">Piano</div></div>
+            <div class="suggest-text"><div class="text-container">League of Legends</div></div>
+            <div class="suggest-text"><div class="text-container">AMVs</div></div>
+            <div class="suggest-text"><div class="text-container">Computer programming</div></div>
+        </div>
+         <!-- End Suggest nav-->
+
+        <!-- Main section -->
         <main>
+            <!-- First video -->
             <section class="video-grid">
                 <div class="video-preview">
+                    <a href="https://www.youtube.com/watch?v=dUxIIEe3DyE&t=6s"></a>
                     <div class="thumbnail-row">
-                        <a href="https://www.youtube.com/watch?v=dUxIIEe3DyE&t=6s"><img class="thumbnail" src="thumbnails/hq720.jpg"></a>
+                        <a href="https://www.youtube.com/watch?v=dUxIIEe3DyE&t=6s"><img class="thumbnail" src="./thumbnails/thumbnail-1.jpg"></a>
                         <div class="video-time">1:21:01</div>
                     </div>
                     <div class="video-info-grid">
                         <div class="channel-picture">
-                            <img class="profile-picture" src="./thumbnails/anhDoProfile.jpg">
+                            <a href="https://www.youtube.com/c/MixiGamingofficial"><img class="profile-picture" src="./thumbnails/profile-1.jpg"></a>
                         </div>
                         <div class="video-info">
                             <a href="https://www.youtube.com/watch?v=dUxIIEe3DyE&t=6s">
@@ -99,7 +124,7 @@
                                 </p>
                             </a>
                             <p class="video-author">
-                                MixiGaming
+                                <a href="https://www.youtube.com/c/MixiGamingofficial">MixiGaming</a> 
                             </p >
                             <p class="video-stats">
                                 220,750 views &#183; 14 Apr 2022
@@ -107,22 +132,22 @@
                         </div>                    
                     </div>                     
                 </div>
-    
+                <!-- Second video -->
                 <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="thumbnails/hqdefault.jpg">
+                        <a href="https://www.youtube.com/watch?v=9EDZixuODrw"><img class="thumbnail" src="./thumbnails/thumbnail-2.jpg"></a>
                         <div class="video-time">2:29</div>
                     </div>
                     <div class="video-info-grid">
                         <div class="channel-picture">
-                            <img class="profile-picture" src="./thumbnails/xooosProfile.jpg">
+                            <a href="https://www.youtube.com/c/xooos"><img class="profile-picture" src="./thumbnails/profile-2.jpg"></a>
                         </div>
                         <div class="video-info">
                             <p class="video-title">
-                                Light Switch - Charlie Puth (xooos cover)
+                                <a href="https://www.youtube.com/watch?v=9EDZixuODrw">Light Switch - Charlie Puth (xooos cover)</a> 
                             </p>
                             <p class="video-author">
-                                xooos 수스
+                                <a href="https://www.youtube.com/c/xooos">xooos 수스</a>
                             </p >
                             <p class="video-stats">
                                 19,161,899 views &#183; 6 Feb 2022
@@ -130,22 +155,22 @@
                         </div>              
                     </div>
                 </div>
-    
+                <!-- Third video -->
                 <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="./thumbnails/thumbnail-3.jpg">
+                        <a href="https://www.youtube.com/watch?v=xsL-5MhQWBk"><img class="thumbnail" src="./thumbnails/thumbnail-3.jpg"></a>
                         <div class="video-time">6:19</div>
                     </div>
                     <div class="video-info-grid">
                         <div class="channel-picture">
-                            <img class="profile-picture" src="./thumbnails/profile-3.jpg">
+                            <a href="https://www.youtube.com/c/SuperSimpleDev"><img class="profile-picture" src="./thumbnails/profile-3.jpg"></a>
                         </div>
                         <div class="video-info">
                             <p class="video-title">
-                                How to compete against CS degrees (as a self-taught dev)
+                                <a href="https://www.youtube.com/watch?v=xsL-5MhQWBk">How to compete against CS degrees (as a self-taught dev)</a> 
                             </p>
                             <p class="video-author">
-                                SuperSimpleDev
+                                <a href="https://www.youtube.com/c/SuperSimpleDev">SuperSimpleDev</a> 
                             </p >
                             <p class="video-stats">
                                 5,850 views &#183; 22 Aug 2021
@@ -153,22 +178,22 @@
                         </div>                    
                     </div>                     
                 </div>
-    
+                <!-- Forth video -->
                 <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="./thumbnails/thumbnail-4.jpg">
+                        <a href="https://www.youtube.com/watch?v=iLQChEJTALU"><img class="thumbnail" src="./thumbnails/thumbnail-4.jpg"></a>
                         <div class="video-time">1:01:12</div>
                     </div>
                     <div class="video-info-grid">
                         <div class="channel-picture">
-                            <img class="profile-picture" src="./thumbnails/profile-4.jpg">
+                            <a href="https://www.youtube.com/c/PugKVlog"><img class="profile-picture" src="./thumbnails/profile-4.jpg"></a>
                         </div>
                         <div class="video-info">
                             <p class="video-title">
-                                Người Việt Đem Bò Kobe, Tôm Hùm Ra Bán Street Food Ở Mỹ! - Khoa Pug Bất Ngờ Street Food Ở Mỹ Và VN!
+                                <a href="https://www.youtube.com/watch?v=iLQChEJTALU">Người Việt Đem Bò Kobe, Tôm Hùm Ra Bán Street Food Ở Mỹ! - Khoa Pug Bất Ngờ Street Food Ở Mỹ Và VN!</a> 
                             </p>
                             <p class="video-author">
-                                Khoa Pug
+                                <a href="https://www.youtube.com/c/PugKVlog">Khoa Pug</a>
                             </p >
                             <p class="video-stats">
                                 772,350 views &#183; 15 Apr 2022
@@ -176,10 +201,10 @@
                         </div>              
                     </div>
                 </div>
-    
+                <!-- Fifth video -->
                 <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="./thumbnails/hq720 (1).jpg">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-5.jpg">
                         <div class="video-time">58:18</div>
                     </div>
                     <div class="video-info-grid">
@@ -199,7 +224,8 @@
                         </div>                    
                     </div>                     
                 </div>
-    
+                
+                <!-- Sixth video -->
                 <div class="video-preview">
                     <div class="thumbnail-row">
                         <img class="thumbnail" src="./thumbnails/thumbnail-6.jpg">
@@ -222,7 +248,54 @@
                         </div>              
                     </div>
                 </div>
+                <!-- Seventh video -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=2iadr2QQ-lg"><img class="thumbnail" src="./thumbnails/thumbnail-7.jpg"></a>
+                        <div class="video-time">52:14</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <a href="https://www.youtube.com/channel/UCwyfi_a0YA7gNug4AgOMMnQ"><img class="profile-picture" src="./thumbnails/profile-7.jpg"></a>
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                <a href="https://www.youtube.com/watch?v=2iadr2QQ-lg">Studio Ghibli Music Collection Piano and Violin Duo 株式会社スタジオジブリ </a> 
+                            </p>
+                            <p class="video-author">
+                                <a href="https://www.youtube.com/channel/UCwyfi_a0YA7gNug4AgOMMnQ">Рустам Косян</a> 
+                            </p >
+                            <p class="video-stats">
+                                345,207 views &#183; 4 Jul 2020
+                            </p>
+                        </div>                    
+                    </div>                     
+                </div>
+                <!-- Eighth video -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=v8SclnWsFLY"><img class="thumbnail" src="./thumbnails/thumbnail-8.jpg"></a>
+                        <div class="video-time">1:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <a href="https://www.youtube.com/c/Sontungmtp"><img class="profile-picture" src="./thumbnails/profile-8.jpg"></a>
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                <a href="https://www.youtube.com/watch?v=v8SclnWsFLY">SƠN TÙNG M-TP | SKY DECADE | Lời Tri Ân</a>
+                            </p>
+                            <p class="video-author">                               
+                                <a href="https://www.youtube.com/c/Sontungmtp">Sơn Tùng M-TP Official</a> 
+                            </p >
+                            <p class="video-stats">
+                                504,928 views &#183; 6 Oct 2022
+                            </p>
+                        </div>                    
+                    </div>                     
+                </div>
             </section>
         </main>
+        <!-- End main -->
     </body>
 </html>

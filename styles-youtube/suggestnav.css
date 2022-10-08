@@ -1,0 +1,37 @@
+.suggest-nav {
+    position: fixed;
+    background-color: white;
+    top: 55px;
+    left: 72px;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.suggest-text {  
+    display: inline-block;
+    padding: 12px 0;
+
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.05);;
+    padding: 4px 12px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.suggest-text:first-child .text-container{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.text-container:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+
