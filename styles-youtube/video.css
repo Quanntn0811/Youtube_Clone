@@ -84,17 +84,17 @@
     opacity: 0.6;
 }
 
-.video-title a:link {
+/* .video-title a:link {
     color: rgb(0, 0, 0);
-}
+} */
 
 .video-title a:visited {
     color: rgb(0, 0, 0);
 }
 
-.video-author a:link {
+/* .video-author a:link {
     color: rgb(96, 96, 96);
-}
+} */
 
 .video-author a:visited {
     color: rgb(96, 96, 96);
