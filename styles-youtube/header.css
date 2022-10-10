@@ -177,3 +177,93 @@
     height: 32px;
     border-radius: 16px;
 }
+
+.profile-content {
+    position: relative;
+}
+
+.content-wrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 298px;
+    animation: modalFadeIn ease 0.5s;
+   z-index: 10;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 16px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.second-section {
+    height: 90vh;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+.first-section .user-picture-content {
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 16px;
+}
+
+.first-section .manage-account {
+    font-size: 14px;
+    color: rgb(6, 95, 212) !important;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 8px 0;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.body-section {
+    padding: 0 36px 0 16px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 14px;
+   
+}
+
+.body-section:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.body-section i {
+    width: 34px;
+    line-height: 34px;
+    font-size: 20px;
+    height: 40px;
+}
+
+.body-section p {
+    line-height: 34px;
+}
+
+.content-wrapper.open {
+    display: block;
+}
+
+.fa-angle-right {
+    height: 34px;
+    margin-left: auto;
+}
+
+@keyframes modalFadeIn {
+    from {
+       
+        transform: translateX(50px);
+    }
+    to {
+        
+        transform: translateX(0);
+    }
+}

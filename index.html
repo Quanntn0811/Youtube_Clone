@@ -53,7 +53,98 @@
                     <div class="noti-count">3</div>
                     <div class="tooltip">Notifications</div>
                 </div>
-                <img class="user-picture" src="./thumbnails/youtube-profile-picture.jpg">
+               
+                <div class="profile-content">
+                    <img class="user-picture" src="./thumbnails/youtube-profile-picture.jpg">
+                    <div class="content-wrapper">
+
+                        <div class="first-section">
+                            <img class="user-picture-content" src="./thumbnails/youtube-profile-picture.jpg" alt="">
+                            <div class="">
+                                <h6 class="profile-name">Quân Ngô</h6>
+                                <a class="manage-account" href="https://myaccount.google.com/u/0/?utm_source=YouTubeWeb&tab=rk&utm_medium=act&tab=rk&hl=en&pli=1">Manage your Google Account</a>
+                            </div>
+                        </div>
+
+                        <div class="second-section">
+                            <div class="content-section">
+                                <div class="body-section">
+                                    <i class="fa fa-user-circle"></i>
+                                    <p>Your chanel</p>
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-play-circle-o"></i>
+                                    <p>YouTube Studio                                </p>
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-users"></i>
+                                    <p>Switch account</p>  
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-sign-out"></i>
+                                    <p>Sign out</p>  
+                                </div>
+                            </div>
+    
+                            <div class="content-section">
+                                <div class="body-section">
+                                    <i class="fa fa-money"></i>
+                                    <p>Purchases and memberships</p>
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa  fa-shield"></i>
+                                    <p>Your data in YouTube</p>                 
+                                </div>
+                            </div>
+    
+                            <div class="content-section">
+                                <div class="body-section">
+                                    <i class="fa fa-moon-o"></i>
+                                    <p>Appearance: Light</p>
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-language"></i>
+                                    <p>Language: English</p> 
+                                                        
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-user-times"></i>
+                                    <p>Restricted Mode: Off</p>
+                                   
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-map-o"></i>
+                                    <p>Location: Vietnam</p>  
+                                                                             
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-keyboard-o "></i>
+                                    <p>Keyboard shortcuts</p>                         
+                                </div>
+                            </div>
+    
+                            <div class="content-section">
+                                <div class="body-section">
+                                    <i class="fa fa-gear"></i>
+                                    <p>Settings</p>                      
+                                </div>
+                            </div>
+    
+                            <div class="content-section">
+                                <div class="body-section">
+                                    <i class="fa fa-question-circle-o"></i>
+                                    <p>Help</p>                                                     
+                                </div>
+                                <div class="body-section">
+                                    <i class="fa fa-commenting-o"></i>
+                                    <p>Send feedback</p>                      
+                                </div>
+                            </div>
+                        </div>                      
+
+                    </div>
+                </div>            
             </div>
         </header>
         <!-- End header-->
@@ -308,5 +399,38 @@
             <p>Clone by quansucno</p>      
     </div>
     <!-- End footer -->
+
+    <script>
+        const userPicture = document.querySelector('.user-picture')
+        const contentWrapper = document.querySelector('.content-wrapper')
+        const body = document.querySelector('body')
+        var check = true;
+
+        function openSetting() {
+            contentWrapper.classList.add('open')
+            check = false;
+        }
+
+        function closeSetting() {
+            contentWrapper.classList.remove('open')
+         
+        }
+
+        userPicture.addEventListener('click', openSetting)
+        userPicture.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+        contentWrapper.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+        
+        body.addEventListener('click', closeSetting)
+         
+     
+                       
+
+        
+            
+    </script>
     </body>
 </html>
