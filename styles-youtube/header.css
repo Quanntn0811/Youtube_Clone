@@ -204,7 +204,21 @@
     height: 90vh;
     min-height: 100%;
     min-width: 100%;
-    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.second-section::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.second-section::-webkit-scrollbar-thumb {
+    background-color: #262a39;
+    border-radius: 10px;
+}
+
+.second-section::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .first-section .user-picture-content {
@@ -256,6 +270,8 @@
     height: 34px;
     margin-left: auto;
 }
+
+
 
 @keyframes modalFadeIn {
     from {

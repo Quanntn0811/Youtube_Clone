@@ -413,10 +413,16 @@
 
         function closeSetting() {
             contentWrapper.classList.remove('open')
-         
+            check = true       
         }
 
-        userPicture.addEventListener('click', openSetting)
+        userPicture.addEventListener('click', function() {
+            if (check)
+                openSetting()
+            else 
+                closeSetting()
+        })
+
         userPicture.addEventListener('click', function(event) {
             event.stopPropagation()
         })
