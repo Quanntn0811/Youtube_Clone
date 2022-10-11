@@ -37,24 +37,24 @@
                 </button>
             </div>
                 
-            <div class="right-section">
-                <div class="upload-icon-container">
+            <div class="right-section">                                     
+                <div class="upload-icon-container margin-right-6">
                     <img class="upload-icon" src="./icon/upload.svg">
                     <div class="tooltip">Create</div>
                 </div>
                
-                <div class="apps-icon-container"> 
+                <div class="apps-icon-container margin-right-6"> 
                     <img class="apps-icon" src="./icon/youtube-apps.svg">
                     <div class="tooltip">Youtube apps</div>
                 </div>
                 
-                <div class="noti-icon-container">
+                <div class="noti-icon-container margin-right-6">
                     <img class="noti-icon" src="./icon/notifications.svg">
                     <div class="noti-count">3</div>
                     <div class="tooltip">Notifications</div>
                 </div>
                
-                <div class="profile-content">
+                <div class="profile-content padding-right-0">
                     <img class="user-picture" src="./thumbnails/youtube-profile-picture.jpg">
                     <div class="content-wrapper">
 
@@ -76,7 +76,7 @@
                                     <i class="fa fa-play-circle-o"></i>
                                     <p>YouTube Studio                                </p>
                                 </div>
-                                <div class="body-section">
+                                <div class="body-section padding-right-0">
                                     <i class="fa fa-users"></i>
                                     <p>Switch account</p>  
                                     <i class="fa fa-angle-right"></i>
@@ -99,23 +99,27 @@
                             </div>
     
                             <div class="content-section">
-                                <div class="body-section">
+                                <div class="body-section padding-right-0">
                                     <i class="fa fa-moon-o"></i>
                                     <p>Appearance: Light</p>
+                                    <i class="fa fa-angle-right"></i>
                                 </div>
-                                <div class="body-section">
+                                <div class="body-section padding-right-0">
                                     <i class="fa fa-language"></i>
                                     <p>Language: English</p> 
+                                    <i class="fa fa-angle-right"></i>
                                                         
                                 </div>
-                                <div class="body-section">
+                                <div class="body-section padding-right-0">
                                     <i class="fa fa-user-times"></i>
                                     <p>Restricted Mode: Off</p>
+                                    <i class="fa fa-angle-right"></i>
                                    
                                 </div>
-                                <div class="body-section">
+                                <div class="body-section padding-right-0">
                                     <i class="fa fa-map-o"></i>
                                     <p>Location: Vietnam</p>  
+                                    <i class="fa fa-angle-right"></i>
                                                                              
                                 </div>
                                 <div class="body-section">
@@ -148,6 +152,7 @@
             </div>
         </header>
         <!-- End header-->
+
         <!-- Nav -->
         <nav class="sidebar">
             <div class="sidebar-link">
@@ -404,23 +409,17 @@
         const userPicture = document.querySelector('.user-picture')
         const contentWrapper = document.querySelector('.content-wrapper')
         const body = document.querySelector('body')
-        var check = true;
-
-        function openSetting() {
-            contentWrapper.classList.add('open')
-            check = false;
-        }
-
+        const header = document.querySelector('.header')
+        const sidebar = document.querySelector('.sidebar')
+        const videoGrid = document.querySelectorAll('.video-grid')
+        const suggestNav = document.querySelector('.suggest-nav')
+        const darkToggle = document.querySelector('#darkmode-toggle')
         function closeSetting() {
-            contentWrapper.classList.remove('open')
-            check = true       
+            contentWrapper.classList.remove('open')     
         }
 
         userPicture.addEventListener('click', function() {
-            if (check)
-                openSetting()
-            else 
-                closeSetting()
+            contentWrapper.classList.toggle('open')
         })
 
         userPicture.addEventListener('click', function(event) {
@@ -431,12 +430,7 @@
         })
         
         body.addEventListener('click', closeSetting)
-         
-     
-                       
-
-        
-            
+          
     </script>
     </body>
 </html>

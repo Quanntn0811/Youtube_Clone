@@ -12,11 +12,13 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgb(228, 228, 228);
+    
 }
 
 .left-section {
     display: flex;
     align-items: center;
+   
 }
 
 .coder {
@@ -40,10 +42,11 @@
 .middle-section {
     display: flex;
     flex: 1;
-    margin-left: 70px;
+    margin-left: 40px;
     margin-right: 35px;
     max-width: 500px;
     align-items: center;
+
 }
 
 .search-bar {
@@ -81,11 +84,13 @@
 .voice-search,
 .upload-icon-container,
 .apps-icon-container,
-.noti-icon-container {
+.noti-icon-container,
+.profile-content {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 0 10px;
 }
 
 .search-button .tooltip,
@@ -137,7 +142,7 @@
 
 .right-section {
     display: flex;
-    width: 180px;
+    /* width: 180px; */
     align-items: center;
     justify-content: space-between;
     margin-right: 20px;
@@ -162,7 +167,7 @@
 .noti-count {
     position: absolute;
     top: -3px;
-    right: -5px;
+    right: 2px;
     background-color: rgb(200, 0, 0);
     color: white;
     font-size: 11px;
@@ -179,6 +184,7 @@
 }
 
 .profile-content {
+    cursor: pointer;
     position: relative;
 }
 
@@ -270,8 +276,6 @@
     height: 34px;
     margin-left: auto;
 }
-
-
 
 @keyframes modalFadeIn {
     from {
