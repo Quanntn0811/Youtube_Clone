@@ -31,7 +31,8 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-a:link { 
+a { 
+    color: #000;
     text-decoration: none; 
 }
 
